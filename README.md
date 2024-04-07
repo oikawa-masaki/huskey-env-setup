@@ -291,3 +291,20 @@ added 36 packages, and audited 434 packages in 3s
 
 found 0 vulnerabilities
 ```
+
+```json
+"lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+```
+
+```json
+"scripts": {
+    "lint": "eslint src",
+    "preview": "vite preview",
+    "test": "vitest --run",
+  },
+```
